@@ -30,7 +30,7 @@
 > ### The key "name" represents the "toString() of this position"
 > ### The key "lim" it's an aux key that represents the limit
 
-## Populate Limits
+## [Populate Limits](src/utils/GenerateDistributionString.js)
 >#### We have two while nested, the first checks whether the atomic number is less than 0, and the second checks whether the limit is less than the number of electrons in these positions, in the "conf" key. If the second is executed, we have that the "lim" key receives an increase of one unit, and the atomic number receives a decrease by one unit, in addition to a stop condition. And to go through the array, we have a counter being incremented after the execution of the second while, within the first.
 ```javascript
   populateLimits(guide, atomicNumber) {
