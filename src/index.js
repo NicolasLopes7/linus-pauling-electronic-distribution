@@ -15,4 +15,12 @@ while (atomicNumber > 0) {
   counter += 1
 }
 
-console.log(guide)
+for (let i = 0; i < guide.length; i++) {
+  if (guide[i].lim > 0) {
+    distribution += guide[i].name + guide[i].lim + ' '
+  } else {
+    break
+  }
+}
+
+console.log(distribution)
